@@ -18,4 +18,4 @@
 
 × KeyboardController
 
-× ApplicationNames
+○ ApplicationNames
