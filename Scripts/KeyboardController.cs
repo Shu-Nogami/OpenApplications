@@ -7,7 +7,7 @@ public class KeyboardController : Object
 
 	public KeyboardController(ApplicationModel applicationModel)
 	{
-
+		_applicationModel = applicationModel;
 	}
 
 	public void PushKeyAction(object sender, KeyEventArgs pushedKey)
