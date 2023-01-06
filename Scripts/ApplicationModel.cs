@@ -7,11 +7,8 @@ public class ApplicationModel : Object
 
 	public ApplicationModel()
 	{
-
-	}
-
-	public void AddDependent(ConsoleView consoleView){
-
+		this.Initialize();
+		_consoleView = new ConsoleView(this);
 	}
 
 	public void CloseApplications()
