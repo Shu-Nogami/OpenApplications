@@ -1,15 +1,16 @@
+using System;
+using System.Windows.Forms;
+
 public class KeyboardController : Object
 {
 	private ApplicationModel _applicationModel;
 
-	private ApplicationModel applicationModel;
-
-	public KeyboardController()
+	public KeyboardController(ApplicationModel applicationModel)
 	{
 
 	}
 
-	public void PushKeyAction()
+	public void PushKeyAction(object sender, KeyEventArgs pushedKey)
 	{
 
 	}

@@ -1,8 +1,8 @@
+using System;
+
 public class OpenApplications : Object
 {
-	private ApplicationModel applicationModel;
-
-	public static void main()
+    static void Main()
 	{
 
 	}

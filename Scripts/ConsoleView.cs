@@ -1,12 +1,10 @@
+using Syetem;
+
 public class ConsoleView : Object
 {
 	private ApplicationModel _applicationModel;
 
-	private ApplicationModel applicationModel;
-
-	private KeyboardController keyboardController;
-
-	public ConsoleView()
+	public ConsoleView(ApplicationModel applicationModel)
 	{
 
 	}
@@ -16,7 +14,7 @@ public class ConsoleView : Object
 
 	}
 
-	public void WriteConsole()
+	public void WriteConsole(string keyName)
 	{
 
 	}
