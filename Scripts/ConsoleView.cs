@@ -6,7 +6,8 @@ public class ConsoleView : Object
 
 	public ConsoleView(ApplicationModel applicationModel)
 	{
-
+		_applicationModel = applicationModel;
+		this.Initialize();
 	}
 
 	public void Initialize()
