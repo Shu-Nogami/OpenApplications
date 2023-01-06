@@ -1,8 +1,5 @@
-public class ApplicationNames : Object
+public static class ApplicationNames : Object
 {
-	public static readonly string LINE;
-
-	private ApplicationModel applicationModel;
-
+	public static readonly string LINE = "LINE.app";
 }
 
