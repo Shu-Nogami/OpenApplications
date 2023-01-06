@@ -12,7 +12,7 @@ public class KeyboardController : Object
 
 	public void PushKeyAction(object sender, KeyEventArgs pushedKey)
 	{
-
+		_applicationModel.OpenApplication(pushedKey);
 	}
 
 }
