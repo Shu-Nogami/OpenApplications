@@ -1,4 +1,4 @@
-using Syetem;
+using System;
 
 public class ConsoleView : Object
 {
@@ -7,6 +7,7 @@ public class ConsoleView : Object
 	public ConsoleView(ApplicationModel applicationModel)
 	{
 		_applicationModel = applicationModel;
+		applicationModel.SetColsoleView(this);
 		new KeyboardController(_applicationModel);
 		this.Initialize();
 	}
@@ -16,9 +17,9 @@ public class ConsoleView : Object
 
 	}
 
-	public void WriteConsole(string keyName)
+	public void WriteConsole(char keyName)
 	{
-
+		Console.Write("\r\n{0}が入力されました\r\n", keyName);
 	}
 
 }
