@@ -1,5 +1,4 @@
 using System;
-using System.Windows.Forms;
 
 public class KeyboardController : Object
 {
@@ -8,11 +7,17 @@ public class KeyboardController : Object
 	public KeyboardController(ApplicationModel applicationModel)
 	{
 		_applicationModel = applicationModel;
+		this.PushKeyAction();
 	}
 
-	public void PushKeyAction(object sender, KeyEventArgs pushedKey)
+	private void PushKeyAction()
 	{
-		_applicationModel.OpenApplication(pushedKey);
+		while(true){
+		    int pushedKey;
+		    pushedKey = Console.Read();
+		    _applicationModel.OpenApplication((char)pushedKey);
+		}
+		
 	}
 
 }
