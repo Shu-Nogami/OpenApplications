@@ -10,12 +10,12 @@
 
 ○ スケルトン作成
 ### 各クラス
-× OpenApplications
+○ OpenApplications
 
-× ApplicationModel
+○ ApplicationModel
 
-× ConsoleView
+○ ConsoleView
 
-× KeyboardController
+○ KeyboardController
 
 ○ ApplicationNames
