@@ -6,6 +6,7 @@ public class ApplicationModel : Object
 	private readonly char PROCESS_KEY_LINE = 'b';
 
 	private ConsoleView _consoleView;
+	private bool _isOpenLINE;
 
 	public ApplicationModel()
 	{
@@ -30,7 +31,8 @@ public class ApplicationModel : Object
 	public void OpenApplication(char pushedKey)
 	{
 		_consoleView.WriteConsole(pushedKey);
-		if(pushedKey.Equals(PROCESS_KEY_LINE)){
+		if(pushedKey.Equals(PROCESS_KEY_LINE) && _isOpenLINE == false){
+			_isOpenLINE = true;
 	        Process.Start(ApplicationNames.LINE);
 		}
 		
