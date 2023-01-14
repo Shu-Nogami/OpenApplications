@@ -7,7 +7,7 @@ public class ConsoleView : Object
 	public ConsoleView(ApplicationModel applicationModel)
 	{
 		_applicationModel = applicationModel;
-		applicationModel.SetColsoleView(this);
+		applicationModel.SetConsoleView(this);
 		new KeyboardController(_applicationModel);
 		this.Initialize();
 	}
